@@ -1,0 +1,24 @@
+{% extends 'base/base.html' %}
+{% load static %}
+
+{% block content %}
+<link rel = "stylesheet" href = "{% static 'css/home.css' %}">
+<div class ='background-container'>
+    <img class = "background-image" src = "{% static 'images/home/backgrounds/background_1.png' %}">
+</div>
+
+<!-- PROFILE -->
+{% include 'home/profile.html' %}
+
+<!-- SERVICE -->
+{% include 'home/service.html' %}
+
+<!-- PROJECTS -->
+{% include 'home/project.html' %}
+
+<div style = "height: 8rem;">
+    <!-- FILLER -->
+</div>
+
+<script src = "{% static 'js/home.js' %}"></script>
+{% endblock content %}

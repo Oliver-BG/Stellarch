@@ -1,0 +1,20 @@
+<ul class = "burger-list">
+        <hr class="bl-hr">
+    <li class = "bl-li"><a class = "bl-op" href = '{% url "home" %}'>Home</a></li>
+        <hr class="bl-hr">
+    <li class="bl-li"><a class = "bl-op" href = '{% url "profile_detail" %}'>Profile</a></li>
+        <hr class="bl-hr">
+    <li class="bl-li"><a class = "bl-li-p-p" style = "z-index: -3">Projects</a></li>
+        <hr class="bl-hr">
+            <a class = "bl-p" href = '{% url "res-project" %}'>
+                &nbsp Residential
+            </a>
+                <hr class="bl-hr">
+            <a class = "bl-p">
+                &nbsp Commercial
+            </a>
+        <hr class="bl-hr">
+    <li class="bl-li"><a class = "bl-op" href = '{% url "service_detail" %}'>Services</a></li>
+        <hr class="bl-hr">
+    <li class="bl-li"><a class = "bl-op">Contact</a></li>
+</ul>

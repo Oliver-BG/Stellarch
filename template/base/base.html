@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+
+{% load static %}
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> StellArchs | Architecture • Interior • Engineering</title>
+        <link rel = "stylesheet" href = "{% static 'css/base.css' %}">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+        {% block style_content %}
+        {% endblock style_content %}
+    </head>
+
+    <body>
+
+        <!-- START HEADER -->
+        <header>
+            <div class = "header-main">
+                <div class = "header-bg">
+                </div>
+                <div class = "header-container">
+                    <img class = "header-logo" src = "{% static 'images/base-header/logo.png' %}">
+                    <div class = "header-text">
+                        <a class = "header-title"> S T E L L A R C H S </a>
+                        <a class = "header-tag"> Architecture • Interior • Engineering </a>
+                    </div>
+                </div>
+                <div class = "menu">
+                    <ul class ="menu-list">
+                        <li class="menu-li"><a href="{% url 'home' %}"> Home </a></li>
+                        <li class="menu-li"> Profile </li>
+                        <li  class="menu-li" id = "li-projects"> Projects</li>
+                        <li class="menu-li"> Services </li>
+                        <li class="menu-li"> <a>Contact </a></li>
+                        {% include 'base/p-dropdown.html' %}
+                    </ul>
+                </div>
+            </div>
+
+            {% include 'base/burger.html' %}
+            {% include 'base/burger-list.html' %}
+
+        </header>
+
+        <!-- END HEADER -->
+
+        <img class ="btn-to-top" src = "{% static 'images/base-header/btn_top.png' %}">
+        <div>
+            {% block content %}
+            {% endblock content %}
+        </div>
+
+        <!-- FOOTER -->
+        <footer class ="footnote"> All rights reserved ® </footer>
+    </body>
+    {% block page_scripts %}
+    {% endblock page_scripts %}
+    <script src = "{% static 'js/base.js' %}"></script>
+</html>

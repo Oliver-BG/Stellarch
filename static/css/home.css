@@ -1,0 +1,250 @@
+
+/* START BACKGROUND */
+
+body{
+    background-color: #37393e;
+}
+
+.background-container{
+    display: flex;
+    position:relative;
+    justify-content: center;
+    z-index: -1;
+}
+
+.background-image{
+    margin-top:6rem;
+    flex-shrink: 0;
+    min-width: 90%;
+    min-height: 100%;
+    max-width: 100%;
+    opacity: 0;
+    transition: opacity 2s;
+}
+
+/* END BACKGROUND */
+
+/* START GENERIC COMPONENTS */
+
+.project-title,
+.service-title,
+.profile-title{
+    position:relative;
+    color: white;
+    background-color: black;
+    margin-top: 2rem;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    right: 30%;
+    transition: right 2s;
+}
+
+.service-text,
+.profile-text{
+    font-size: 1.25rem;
+    color: black;
+    text-align: justify;
+    text-justify: inner-word;
+    padding-bottom: 2rem;
+    background-color: #80705D;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media screen and (max-width: 600px){
+    .service-text,
+    .profile-text{
+        font-size: 1rem;
+        padding-top: 1rem;
+    }
+}
+
+.project-container,
+.service-container,
+.profile-container{
+    z-index: -99;
+    opacity: 0;
+    transition: opacity 1.5s;
+}
+
+.hide{
+    opacity: 0;
+}
+
+.reveal{
+    opacity: 1;
+}
+
+/* END GENERIC COMPONENTS */
+
+/* START PROFILE */
+
+.profile-content{
+    position:relative;
+    background-color: #b39964;
+    transition: left 2s;
+    display: flex;
+    align-items: center;
+    flex-wrap: row wrap;
+    justify-content: space-around;
+}
+
+@media screen and (max-width: 750px){
+    .profile-content{
+        flex-direction: column-reverse;
+    }
+}
+
+.profile-text{
+    min-width:60%;
+    max-width:60%;
+}
+
+@media screen and (max-width: 600px){
+    .profile-text{
+        margin-top: 2rem;
+        min-width:80%;
+        max-width:80%;
+    }
+}
+
+.profile-portrait{
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    flex-shrink: 0;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    transform: scale(0.9);
+}
+
+@media screen and (max-width: 600px){
+    .profile-portrait{
+        transform: scale(0.7,0.7);
+    }
+}
+
+.profile-image{
+    /* none */
+}
+
+.profile-portrait{
+    -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+}
+
+@media screen and (max-width: 600px){
+    .profile-image{
+        margin: -4rem;
+    }
+}
+
+.profile-arch-name{
+    position: relative;
+    font-style: italic;
+    font-size: 1.0rem;
+    font-weight: 700;
+    margin-top: -3.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+@media screen and (max-width: 600px){
+    .profile-arch-name{
+        margin-top: -5.5rem;
+        font-size: 0.75rem;
+        margin-bottom: 4rem;
+        min-width: 10rem;
+    }
+}
+
+/* END PROFILE */
+
+/* START SERVICE */
+
+.service-images{
+    display: flex;
+    flex-direction: column;
+}
+
+.service-content{
+    justify-content: center;
+}
+
+.service-content{
+    position:relative;
+    background-color: #b39964;
+    transition: left 2s;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.service-concept-image{
+    text-align:center;
+    width:100%;
+    display:block;
+    margin:auto;
+    max-width: 60%;
+    min-width: 60%;
+    flex-shrink: 0;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    border: 0.20rem dashed;
+    border-radius: 2rem;
+}
+
+@media screen and (max-width: 600px){
+    .service-concept-image{
+        margin-top: 1rem;
+        max-width: 95%;
+        min-width: 95%;
+        margin-bottom: 0.75rem;
+    }
+}
+
+.service-caption{
+    text-align:center;
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-size: 1.0rem;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 600px){
+    .service-caption{
+        font-size: 0.75rem;
+    }
+}
+
+.service-text{
+    max-width: 80%;
+    min-width: 80%;
+}
+
+/* END SERVICE */
+
+/* SEE MORE BUTTON */
+
+.btn-see-more{
+    margin-top: 1rem;
+    font-size:1.25rem;
+    padding: 0.3rem;
+    background-color: #584c39;
+    color: white;
+    border: none;
+    border-radius: 0.5rem;
+}
+
+.btn-see-more:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    background-color: #980808;
+    transition: transform 0.5s;
+}
+
+
