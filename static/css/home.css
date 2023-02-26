@@ -165,16 +165,26 @@ body{
 
 /* START SERVICE */
 
-.service-images{
+.service-component-row,
+.service-component{
+    margin-top: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 1rem;
+    padding-bottom: 2rem;
     display: flex;
     flex-direction: column;
+    background-color: #80705D;
+    justify-content:center;
+    max-width: 80%;
+    min-width: 80%;
+}
+
+.service-component{
+    align-items: center;
 }
 
 .service-content{
     justify-content: center;
-}
-
-.service-content{
     position:relative;
     background-color: #b39964;
     transition: left 2s;
@@ -192,8 +202,6 @@ body{
     min-width: 60%;
     flex-shrink: 0;
     text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
     border: 0.20rem dashed;
     border-radius: 2rem;
 }
@@ -209,6 +217,7 @@ body{
 
 .service-caption{
     text-align:center;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
     font-style: italic;
     font-size: 1.0rem;
@@ -223,8 +232,33 @@ body{
 
 .service-text{
     max-width: 80%;
-    min-width: 80%;
 }
+
+/* START ARCH-BUILD-ENGINEERING */
+
+.service-content-2{
+    display:flex;
+
+    flex-direction: row;
+    max-width: 80%;
+    over-flow: hidden;
+}
+
+.service-component-row{
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.site-photo{
+    min-width: 25%;
+    min-height: 25%;
+}
+
+.service-component-row > .service-text{
+    max-width: 53%;
+}
+
+/* END ARCH-BUILD-ENGINEERING */
 
 /* END SERVICE */
 

@@ -11,9 +11,6 @@ def home_page_view(request):
 def profile_page_view(request):
     return render(request, 'profile/profile_detail.html')
 
-def service_page_view(request):
-    return render(request, 'service/service_detail.html')
-
 class ResProjectPageView(ListView):
     template_name = 'project/res-project.html'
     model = Project

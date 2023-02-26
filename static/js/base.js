@@ -1,7 +1,6 @@
 'use strict';
 
 const btnToTop = document.querySelector(".btn-to-top");
-const btnProject = document.getElementById("li-projects");
 const dropDownProject = document.querySelector(".li-projects-dropdown");
 const headerMain = document.querySelector(".header-main");
 const headerLogo = document.querySelector(".header-logo");
@@ -11,6 +10,10 @@ const menuList = document.querySelector(".menu-list");
 const burgerMenu = document.querySelector(".burger-menu");
 const burgerList = document.querySelector(".burger-list");
 
+const btnProject = document.getElementById("li-projects");
+const btnService = document.getElementById("li-services");
+const btnBlService = document.getElementById("bl-service");
+
 setTimeout(function(){
     headerMain.style.opacity = '1';
     headerLogo.style.left = '0';
@@ -19,6 +22,7 @@ setTimeout(function(){
     menuList.style.top = '0';
 }, 1);
 
+// FUNCTIONS
 
 window.onscroll = function () {
   scrollTop();
@@ -32,13 +36,33 @@ const scrollTop = function () {
   }
 };
 
+const scrollToService = function(n){
+    let relativePos = (window.innerWidth > 700) ? (n + 500) : (n - 200);
+    console.log(relativePos)
+
+    window.scrollTo({
+    top: relativePos,
+    behavior: "smooth",
+  });
+}
+
 burgerList.classList.add("burger-switch");
+
+// EVENT LISTENERS
 
 btnToTop.addEventListener("click", () => {
   window.scrollTo({
     top: 100,
     behavior: "smooth",
   });
+});
+
+btnService.addEventListener("click", () => {
+  scrollToService(1300);
+});
+
+btnBlService.addEventListener("click", ()=>{
+    scrollToService(1300);
 });
 
 btnProject.addEventListener("click", () => {
