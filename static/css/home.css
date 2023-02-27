@@ -41,7 +41,7 @@ body{
 
 .service-text,
 .profile-text{
-    font-size: 1.25rem;
+    font-size: 1rem;
     color: black;
     text-align: justify;
     text-justify: inner-word;
@@ -55,7 +55,7 @@ body{
 @media screen and (max-width: 600px){
     .service-text,
     .profile-text{
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding-top: 1rem;
     }
 }
@@ -167,8 +167,8 @@ body{
 .service-component{
     margin-top: 2rem;
     padding-top: 2rem;
-    margin-bottom: 1rem;
     padding-bottom: 2rem;
+    margin-bottom: 5%;
     background-color: #80705D;
 }
 
@@ -240,25 +240,49 @@ body{
     display: flex;
     width:100%;
     justify-content: space-between;
-
-
-
     max-width:80%;
     flex-flow: row nowrap;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 900px){
+    .service-content-2{
+        flex-direction:column;
+    }
 }
 
 .service-component-row{
-    width: 100%
+    display: flex;
     background-color: #80705D;
-    width: 30rem;
-    height: 20rem;
+    width: 45rem;
     flex-flow:row wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+    align-content:start;
+}
+
+@media screen and (max-width: 800px){
+    .service-component-row{
+        width:100%;
+    }
+}
+
+.service-component-row>.service-caption{
+    height: 2rem;
+}
+
+.service-component-row>.service-text{
+    padding-top: 0;
+}
+
+.site-photo{
+    max-width:100%;
+    max-height:100%;
 }
 
 #build-const,
 #planning{
-    float:right;
-    background-color: #80705D;
+
 }
 
 /* END ARCH-BUILD-ENGINEERING */
