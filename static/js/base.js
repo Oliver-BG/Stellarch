@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 const btnToTop = document.querySelector(".btn-to-top");
 const dropDownProject = document.querySelector(".li-projects-dropdown");
@@ -14,12 +14,12 @@ const btnProject = document.getElementById("li-projects");
 const btnService = document.getElementById("li-services");
 const btnBlService = document.getElementById("bl-service");
 
-setTimeout(function(){
-    headerMain.style.opacity = '1';
-    headerLogo.style.left = '0';
-    headerTitle.style.left = '0';
-    headerTag.style.left = '0';
-    menuList.style.top = '0';
+setTimeout(function () {
+  headerMain.style.opacity = "1";
+  headerLogo.style.left = "0";
+  headerTitle.style.left = "0";
+  headerTag.style.left = "0";
+  menuList.style.top = "0";
 }, 1);
 
 // FUNCTIONS
@@ -36,15 +36,15 @@ const scrollTop = function () {
   }
 };
 
-const scrollToService = function(n){
-    let relativePos = (window.innerWidth > 700) ? (n + 500) : (n - 200);
-    console.log(relativePos)
+const scrollToBottom = function (n) {
+  let relativePos = window.innerWidth > 700 ? n : n - 200;
+  console.log(relativePos);
 
-    window.scrollTo({
+  window.scrollTo({
     top: relativePos,
     behavior: "smooth",
   });
-}
+};
 
 burgerList.classList.add("burger-switch");
 
@@ -58,11 +58,7 @@ btnToTop.addEventListener("click", () => {
 });
 
 btnService.addEventListener("click", () => {
-  scrollToService(1300);
-});
-
-btnBlService.addEventListener("click", ()=>{
-    scrollToService(1300);
+  serviceTitle.scrollIntoView();
 });
 
 btnProject.addEventListener("click", () => {
@@ -73,8 +69,8 @@ dropDownProject.addEventListener("mouseleave", () => {
   dropDownProject.classList.add("opacity-switch");
 });
 
-burgerMenu.addEventListener("click",() => {
-    burgerList.classList.toggle("burger-switch");
+burgerMenu.addEventListener("click", () => {
+  burgerList.classList.toggle("burger-switch");
 });
 
 dropDownProject.classList.add("opacity-switch");

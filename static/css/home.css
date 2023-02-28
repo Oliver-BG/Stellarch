@@ -63,18 +63,17 @@ body{
 .project-container,
 .service-container,
 .profile-container{
-    z-index: -99;
-    opacity: 0;
     transition: opacity 1.5s;
 }
 
-.hide{
-    opacity: 0;
+.service-container{
+    height:auto;
 }
 
-.reveal{
-    opacity: 1;
+.hide{
+    opacity:0;
 }
+
 
 /* END GENERIC COMPONENTS */
 
@@ -181,13 +180,16 @@ body{
     max-width: 80%;
 }
 
+.project-content,
 .service-content{
     justify-content: center;
-    position:relative;
     background-color: #b39964;
     transition: left 2s;
     display: flex;
     align-items: center;
+}
+
+.service-content{
     flex-direction: column;
 }
 
@@ -213,6 +215,7 @@ body{
     }
 }
 
+.project-caption,
 .service-caption{
     text-align:center;
     margin-top: 0.5rem;
@@ -252,14 +255,15 @@ body{
     }
 }
 
+.project-component-row,
 .service-component-row{
-    display: flex;
-    background-color: #80705D;
+    display: flex; 
     width: 45rem;
     flex-flow:row wrap;
     justify-content: center;
     margin-bottom: 2rem;
     align-content:start;
+    background-color: #80705D;
 }
 
 @media screen and (max-width: 800px){
@@ -276,14 +280,10 @@ body{
     padding-top: 0;
 }
 
+.project-image,
 .site-photo{
     max-width:100%;
     max-height:100%;
-}
-
-#build-const,
-#planning{
-
 }
 
 /* END ARCH-BUILD-ENGINEERING */
@@ -292,7 +292,19 @@ body{
 
 /* START PROJECTS */
 
+.project-container>.project-content{
+    display:flex;
+    gap: 2rem;
+}
 
+.project-image{
+    margin-top: 2rem;
+}
+
+
+.project-component-row{
+    align-content: start;
+}
 
 /* SEE MORE BUTTON */
 
