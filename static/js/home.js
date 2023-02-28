@@ -67,7 +67,7 @@ const slideShow = function(){
 window.addEventListener("scroll", function(){
     revealWidget(profileTitle, profileContainer, profileContent, 170,1270);
     revealWidget(serviceTitle, serviceContainer, serviceContent, 870,2770);
-    revealWidget(projectTitle, projectContainer, projectContent, 1200,4270);
+    revealWidget(projectTitle, projectContainer, projectContent, 2000,4270);
 });
 
 slideShow();

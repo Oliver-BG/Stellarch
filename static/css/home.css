@@ -80,6 +80,7 @@ body{
 
 /* START PROFILE */
 
+.project-content,
 .profile-content{
     position:relative;
     background-color: #b39964;
@@ -288,6 +289,10 @@ body{
 /* END ARCH-BUILD-ENGINEERING */
 
 /* END SERVICE */
+
+/* START PROJECTS */
+
+
 
 /* SEE MORE BUTTON */
 
