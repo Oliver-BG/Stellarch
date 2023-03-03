@@ -12,6 +12,7 @@ const burgerList = document.querySelector(".burger-list");
 
 const btnProject = document.getElementById("li-projects");
 const btnService = document.getElementById("li-services");
+const btnContact = document.getElementById("li-contact");
 const btnBlService = document.getElementById("bl-service");
 
 setTimeout(function () {
@@ -59,6 +60,11 @@ btnToTop.addEventListener("click", () => {
 
 btnService.addEventListener("click", () => {
   serviceTitle.scrollIntoView();
+});
+
+btnService.addEventListener("click", () => {
+  console.log("test");
+  contactTitle.scrollIntoView();
 });
 
 btnProject.addEventListener("click", () => {
