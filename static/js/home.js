@@ -24,6 +24,8 @@ setTimeout(function () {
 /* FUNCTIONS */
 
 const isElementXPercentInViewport = function (el, percentVisible) {
+  // Function by folo from StackOverflow
+
   let rect = el.getBoundingClientRect(),
     windowHeight = window.innerHeight || document.documentElement.clientHeight;
 

@@ -3,10 +3,12 @@
 <div class="project-container">
   <h1 class="project-title">P R O J E C T S</h1>
   <div class="project-content">
-    <div class = "project-content-flex">
-      
+    <div class="project-content-flex">
       <!-- FOR RESIDENTIAL -->
-      <div class="project-component-row">
+      <div 
+        class="project-component-row"
+        onclick = 'location.href = "resproject"'
+      >
         <img
           class="project-image"
           src='{% static "images/project/residential.png" %}'
@@ -15,7 +17,10 @@
       </div>
 
       <!-- FOR COMMERCIAL -->
-      <div class="project-component-row">
+      <div 
+        class="project-component-row"
+        onclick = 'location.href = "comproject"'
+      >
         <img
           class="project-image"
           src='{% static "images/project/commercial.png" %}'

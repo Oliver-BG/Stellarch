@@ -1,24 +1,24 @@
 /* START BACKGROUND */
 
-body{
-    background-color: #37393e;
+body {
+  background-color: #37393e;
 }
 
-.background-container{
-    display: flex;
-    position:relative;
-    justify-content: center;
-    z-index: -1;
+.background-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  z-index: -1;
 }
 
-.background-image{
-    margin-top:6rem;
-    flex-shrink: 0;
-    min-width: 90%;
-    min-height: 100%;
-    max-width: 100%;
-    opacity: 0;
-    transition: opacity 2s;
+.background-image {
+  margin-top: 6rem;
+  flex-shrink: 0;
+  min-width: 90%;
+  min-height: 100%;
+  max-width: 100%;
+  opacity: 0;
+  transition: opacity 2s;
 }
 
 /* END BACKGROUND */
@@ -27,264 +27,263 @@ body{
 
 .project-title,
 .service-title,
-.profile-title{
-    position:relative;
-    color: white;
-    background-color: black;
-    margin-top: 2rem;
-    padding: 1rem;
-    display: flex;
-    justify-content: center;
-    right: 30%;
-    transition: right 2s;
+.profile-title {
+  position: relative;
+  color: white;
+  background-color: black;
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  right: 30%;
+  transition: right 2s;
 }
 
 .service-text,
-.profile-text{
-    font-size: 1rem;
-    color: black;
-    text-align: justify;
-    text-justify: inner-word;
-    padding-bottom: 2rem;
-    background-color: #80705D;
-    padding-top: 2rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+.profile-text {
+  font-size: 1rem;
+  color: black;
+  text-align: justify;
+  text-justify: inner-word;
+  padding-bottom: 2rem;
+  background-color: #80705d;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
-@media screen and (max-width: 600px){
-    .service-text,
-    .profile-text{
-        font-size: 0.9rem;
-        padding-top: 1rem;
-    }
+@media screen and (max-width: 600px) {
+  .service-text,
+  .profile-text {
+    font-size: 0.9rem;
+    padding-top: 1rem;
+  }
 }
 
 .project-container,
 .service-container,
-.profile-container{
-    transition: opacity 1.5s;
+.profile-container {
+  transition: opacity 1.5s;
 }
 
-.service-container{
-    height:auto;
+.service-container {
+  height: auto;
 }
 
-.hide{
-    opacity:0;
+.hide {
+  opacity: 0;
 }
-
 
 /* END GENERIC COMPONENTS */
 
 /* START PROFILE */
 
 .project-content,
-.profile-content{
-    position:relative;
-    background-color: #b39964;
-    transition: left 2s;
-    display: flex;
-    align-items: center;
-    flex-wrap: row wrap;
-    justify-content: space-around;
+.profile-content {
+  position: relative;
+  background-color: #b39964;
+  transition: left 2s;
+  display: flex;
+  align-items: center;
+  flex-wrap: row wrap;
+  justify-content: space-around;
 }
 
-@media screen and (max-width: 800px){
-    .profile-content{
-        flex-direction: column-reverse;
-    }
+@media screen and (max-width: 800px) {
+  .profile-content {
+    flex-direction: column-reverse;
+  }
 }
 
-.profile-text{
-    min-width:60%;
-    max-width:60%;
+.profile-text {
+  min-width: 60%;
+  max-width: 60%;
 }
 
-@media screen and (max-width: 600px){
-    .profile-text{
-        margin-top: 2rem;
-        min-width:80%;
-        max-width:80%;
-    }
+@media screen and (max-width: 600px) {
+  .profile-text {
+    margin-top: 2rem;
+    min-width: 80%;
+    max-width: 80%;
+  }
 }
 
-.profile-portrait{
-    width: 100%;
-    max-width: 100%;
-    min-width: 100%;
-    flex-shrink: 0;
-    margin-top: 3rem;
-    margin-bottom: 3rem;
-    transform: scale(0.9);
+.profile-portrait {
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  flex-shrink: 0;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  transform: scale(0.9);
 }
 
-@media screen and (max-width: 600px){
-    .profile-portrait{
-        transform: scale(0.7,0.7);
-    }
+@media screen and (max-width: 600px) {
+  .profile-portrait {
+    transform: scale(0.7, 0.7);
+  }
 }
 
-.profile-image{
-    /* none */
+.profile-image {
+  /* none */
 }
 
-.profile-portrait{
-    -webkit-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
-    box-shadow: 10px 10px 5px -6px rgba(0,0,0,0.75);
+.profile-portrait {
+  -webkit-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 5px -6px rgba(0, 0, 0, 0.75);
 }
 
-@media screen and (max-width: 600px){
-    .profile-image{
-        margin: -4rem;
-    }
+@media screen and (max-width: 600px) {
+  .profile-image {
+    margin: -4rem;
+  }
 }
 
-.profile-arch-name{
-    position: relative;
-    font-style: italic;
-    font-size: 1.0rem;
-    font-weight: 700;
-    margin-top: -3.5rem;
-    text-align: center;
-    margin-bottom: 2rem;
+.profile-arch-name {
+  position: relative;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: -3.5rem;
+  text-align: center;
+  margin-bottom: 2rem;
 }
 
-@media screen and (max-width: 600px){
-    .profile-arch-name{
-        margin-top: -5.5rem;
-        font-size: 0.75rem;
-        margin-bottom: 4rem;
-        min-width: 10rem;
-    }
+@media screen and (max-width: 600px) {
+  .profile-arch-name {
+    margin-top: -5.5rem;
+    font-size: 0.75rem;
+    margin-bottom: 4rem;
+    min-width: 10rem;
+  }
 }
 
 /* END PROFILE */
 
 /* START SERVICE */
 
-.service-component{
-    margin-top: 2rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    margin-bottom: 5%;
-    background-color: #80705D;
+.service-component {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 5%;
+  background-color: #80705d;
 }
 
-.service-component{
-    display: flex;
-    justify-content:center;
-    flex-direction: column;
-    align-items: center;
-    max-width: 80%;
+.service-component {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  max-width: 80%;
 }
 
 .project-content,
-.service-content{
-    position:relative;
-    justify-content: center;
-    background-color: #b39964;
-    transition: left 2s;
-    display: flex;
-    align-items: center;
+.service-content {
+  position: relative;
+  justify-content: center;
+  background-color: #b39964;
+  transition: left 2s;
+  display: flex;
+  align-items: center;
 }
 
-.service-content{
-    flex-direction: column;
+.service-content {
+  flex-direction: column;
 }
 
-.service-concept-image{
-    text-align:center;
-    width:100%;
-    display:block;
-    margin:auto;
-    max-width: 60%;
-    min-width: 60%;
-    flex-shrink: 0;
-    text-align: center;
-    border: 0.20rem dashed;
-    border-radius: 2rem;
+.service-concept-image {
+  text-align: center;
+  width: 100%;
+  display: block;
+  margin: auto;
+  max-width: 60%;
+  min-width: 60%;
+  flex-shrink: 0;
+  text-align: center;
+  border: 0.2rem dashed;
+  border-radius: 2rem;
 }
 
-@media screen and (max-width: 600px){
-    .service-concept-image{
-        margin-top: 1rem;
-        max-width: 95%;
-        min-width: 95%;
-        margin-bottom: 0.75rem;
-    }
+@media screen and (max-width: 600px) {
+  .service-concept-image {
+    margin-top: 1rem;
+    max-width: 95%;
+    min-width: 95%;
+    margin-bottom: 0.75rem;
+  }
 }
 
 .project-caption,
-.service-caption{
-    text-align:center;
-    margin-top: 0.5rem;
-    margin-bottom: 1rem;
-    font-style: italic;
-    font-size: 1.0rem;
-    font-weight: 700;
+.service-caption {
+  text-align: center;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  font-style: italic;
+  font-size: 1rem;
+  font-weight: 700;
 }
 
-@media screen and (max-width: 600px){
-    .service-caption{
-        font-size: 0.75rem;
-    }
+@media screen and (max-width: 600px) {
+  .service-caption {
+    font-size: 0.75rem;
+  }
 }
 
-.service-text{
-    text-justify: inner-word;
-    max-width: 80%;
-    margin-left:auto;
-    margin-right:auto;
+.service-text {
+  text-justify: inner-word;
+  max-width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* START ARCH-BUILD-ENGINEERING */
 
-.service-content-2{
-    display: flex;
-    width:100%;
-    justify-content: space-between;
-    max-width:80%;
-    flex-flow: row nowrap;
-    gap: 2rem;
+.service-content-2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  max-width: 80%;
+  flex-flow: row nowrap;
+  gap: 2rem;
 }
 
-@media screen and (max-width: 900px){
-    .service-content-2{
-        flex-direction:column;
-    }
+@media screen and (max-width: 900px) {
+  .service-content-2 {
+    flex-direction: column;
+  }
 }
 
 .project-component-row,
-.service-component-row{
-    display: flex; 
-    width: 45rem;
-    flex-flow:row wrap;
-    justify-content: center;
-    margin-bottom: 2rem;
-    align-content:start;
-    background-color: #80705D;
+.service-component-row {
+  display: flex;
+  width: 45rem;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-bottom: 2rem;
+  align-content: start;
+  background-color: #80705d;
 }
 
-@media screen and (max-width: 800px){
-    .service-component-row{
-        width:100%;
-    }
+@media screen and (max-width: 800px) {
+  .service-component-row {
+    width: 100%;
+  }
 }
 
-.service-component-row>.service-caption{
-    height: 2rem;
+.service-component-row > .service-caption {
+  height: 2rem;
 }
 
-.service-component-row>.service-text{
-    padding-top: 0;
+.service-component-row > .service-text {
+  padding-top: 0;
 }
 
 .project-image,
-.site-photo{
-    max-width:100%;
-    max-height:100%;
+.site-photo {
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* END ARCH-BUILD-ENGINEERING */
@@ -293,37 +292,41 @@ body{
 
 /* START PROJECTS */
 
-.project-content-flex{
-    display:flex;
-    flex-flow: row wrap;
-    max-width: 80%;
-    gap: 2rem;
+.project-content-flex {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 80%;
+  gap: 2rem;
 }
 
-.project-image{
-    margin-top: 2rem;
+.project-component-row {
+  align-content: start;
+  margin-top: 2rem;
+  transition: all 0.5s;
 }
 
-
-.project-component-row{
-    align-content: start;
+.project-component-row:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+  box-shadow: 0 0 50px 2px #abb3b8;
+  filter: grayscale(0.75);
 }
 
 /* SEE MORE BUTTON */
 
-.btn-see-more{
-    margin-top: 1rem;
-    font-size:1.25rem;
-    padding: 0.3rem;
-    background-color: #584c39;
-    color: white;
-    border: none;
-    border-radius: 0.5rem;
+.btn-see-more {
+  margin-top: 1rem;
+  font-size: 1.25rem;
+  padding: 0.3rem;
+  background-color: #584c39;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
 }
 
-.btn-see-more:hover{
-    cursor: pointer;
-    transform: scale(1.1);
-    background-color: #980808;
-    transition: transform 0.5s;
+.btn-see-more:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+  background-color: #980808;
+  transition: transform 0.5s;
 }
