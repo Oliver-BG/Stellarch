@@ -25,6 +25,7 @@ body {
 
 /* START GENERIC COMPONENTS */
 
+.contact-title,
 .project-title,
 .service-title,
 .profile-title {
@@ -78,6 +79,7 @@ body {
 
 /* START PROFILE */
 
+.contact-content,
 .project-content,
 .profile-content {
   position: relative;
@@ -189,6 +191,7 @@ body {
   align-items: center;
 }
 
+.contact-content,
 .service-content {
   flex-direction: column;
 }
@@ -292,11 +295,16 @@ body {
 
 /* START PROJECTS */
 
+.contact-flex-container,
 .project-content-flex {
   display: flex;
   flex-flow: row wrap;
   max-width: 80%;
   gap: 2rem;
+}
+
+.project-content-flex{
+  justify-content: center;
 }
 
 .project-component-row {
@@ -310,7 +318,36 @@ body {
   cursor: pointer;
   box-shadow: 0 0 50px 2px #abb3b8;
   filter: grayscale(0.75);
+  color: #980808;
 }
+
+/* END PROJECT */
+
+/* START CONTACT */
+
+.contact-flex-container{
+  margin-bottom: 2rem;
+  justify-content: space-between;
+  width:100%;
+  max-width: 80%;
+}
+
+.map-container{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom:2rem;
+  padding:2 2 2 2rem;
+}
+
+.map {
+  border: 1rem solid;
+  border-color: #80705d;
+  max-width: 80%;
+}
+
+/* END CONTACT */
 
 /* SEE MORE BUTTON */
 

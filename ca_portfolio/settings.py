@@ -28,7 +28,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,7 +38,6 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'post.apps.PostConfig',
-    'easy_maps',
 ]
 
 MIDDLEWARE = [
@@ -78,8 +76,12 @@ WSGI_APPLICATION = 'ca_portfolio.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'stellarchs',
+        'USER': 'root',
+        'PASSWORD': 'rootPassTemp1234',
+        'HOST':'127.0.0.1',
+        'PORT':'3306',
     }
 }
 
