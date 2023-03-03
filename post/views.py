@@ -16,3 +16,8 @@ class ResProjectPageView(ListView):
     model = Project
 
 
+class ComProjectPageView(ListView):
+    template_name = 'project/com-project.html'
+    model = Project
+
+
