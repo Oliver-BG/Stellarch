@@ -17,6 +17,11 @@ const projectContainer = document.querySelector(".project-container");
 const projectTitle = document.querySelector(".project-title");
 const projectContent = document.querySelector(".project-content");
 
+// CONTACT
+const contactContainer = document.querySelector(".contact-container");
+const contactTitle = document.querySelector(".contact-title");
+const contactContent = document.querySelector(".contact-content");
+
 setTimeout(function () {
   bgImage.style.opacity = "1";
 }, 1);
@@ -85,6 +90,8 @@ window.addEventListener("scroll", function () {
   revealWidget(serviceContainer, serviceTitle, serviceContent, 20);
 
   revealWidget(projectContainer, projectTitle, projectContent, 20);
+
+  revealWidget(contactContainer, contactTitle, contactContent, 20);
 });
 
 slideShow();
