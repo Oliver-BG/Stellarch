@@ -1,20 +1,27 @@
 {% load static %}
 
-<div class = "project-container">
-    <h1 class ="project-title"> P R O J E C T S </h1>
-    <div class = "project-content">
+<div class="project-container">
+  <h1 class="project-title">P R O J E C T S</h1>
+  <div class="project-content">
+    <div class = "project-content-flex">
+      
+      <!-- FOR RESIDENTIAL -->
+      <div class="project-component-row">
+        <img
+          class="project-image"
+          src='{% static "images/project/residential.png" %}'
+        />
+        <p class="project-caption">RESIDENTIAL</p>
+      </div>
 
-        <!-- FOR RESIDENTIAL -->
-        <div class = "project-component-row">
-            <img class = "project-image" src = '{% static "images/project/residential.png" %}'>
-            <p class = "project-caption"> COMMERCIAL </p>
-        </div>
-
-        <!-- FOR COMMERCIAL -->
-        <div class = "project-component-row">
-             <img class = "project-image" src = '{% static "images/project/commercial.png" %}'>
-             <p class = "project-caption"> COMMERCIAL </p>
-        </div>
-
+      <!-- FOR COMMERCIAL -->
+      <div class="project-component-row">
+        <img
+          class="project-image"
+          src='{% static "images/project/commercial.png" %}'
+        />
+        <p class="project-caption">COMMERCIAL</p>
+      </div>
     </div>
+  </div>
 </div>
