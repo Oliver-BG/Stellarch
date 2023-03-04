@@ -4,22 +4,46 @@
     <h1 class ="contact-title"> C O N T A C T </h1>
 
     <div class = "contact-content">
-        <div class = "map-container">
-            <iframe class="map" width="800" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&t=m&ll=14.5969127,121.1136054&spn=0.003381,0.017231&z=16&output=embed"></iframe>
-        </p>
-    </div>
+        <div class = "main-contact-flex-container">
 
-    <div class = "contact-flex-container">
-        <div class = "form-container">
-            <input>
-            </input>
+            <iframe class="map" width="800rem" height="400rem" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&t=m&ll=14.5969127,121.1136054&spn=0.003381,0.017231&z=16&output=embed"></iframe>
+        
+            <div class = "contact-flex-container">
+                <div class = "contact-flex-item">
+
+                    <input placeholder = "Enter Name">
+                    </input>
+
+                    <input placeholder = "Enter E-mail">
+                    </input>
+
+                    <input placeholder = "Enter Subject">
+                    </input>
+
+                    <textarea placeholder = "Enter E-mail">
+                    </textarea>
+
+
+                </div>
+                
+                <div class = "contact-flex-item">
+                    <p>
+                        Contact Number: 0917-717-8515
+                        <br>
+                        Email:
+                    </p>
+
+                    <div>
+
+                        <img src = '{% static "images\home\socmed\facebook-icon.png" %}' style = "width: 3rem;">
+
+                        <img src = '{% static "images\home\socmed\instagram-icon.png" %}' style = "width: 3rem;">
+                        
+                    </div>
+                </div>
+            </div>
+        
         </div>
-
-        <p>
-            Contact Number:
-            <br>
-            Email:
-        </p>
     </div>
 </div>
 
