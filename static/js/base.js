@@ -62,7 +62,7 @@ btnService.addEventListener("click", () => {
   serviceTitle.scrollIntoView();
 });
 
-btnService.addEventListener("click", () => {
+btnContact.addEventListener("click", () => {
   console.log("test");
   contactTitle.scrollIntoView();
 });

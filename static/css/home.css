@@ -173,6 +173,7 @@ body {
 }
 
 .service-component {
+  padding-top: 6rem;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -196,11 +197,10 @@ body {
 
 .service-concept-image {
   text-align: center;
-  width: 100%;
   display: block;
   margin: auto;
-  max-width: 50%;
-  min-width: 50%;
+  max-width: 70%;
+  min-width: 70%;
   flex-shrink: 0;
   text-align: center;
   border: 0.2rem dashed;
@@ -301,7 +301,7 @@ body {
   gap: 2rem;
 }
 
-.project-content-flex{
+.project-content-flex {
   justify-content: center;
 }
 
@@ -311,9 +311,27 @@ body {
   transition: all 0.5s;
 }
 
+.socmed-container {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 5rem;
+  gap: 8rem;
+}
+
+.contact-container > div > a > img:hover,
+.project-component-row:hover {
+  cursor: pointer;
+  transition: all 0.5s;
+  cursor: pointer;
+  transform: scale(1.1);
+  filter: grayscale(100%) brightness(80%) sepia(100%) hue-rotate(-15deg)
+    saturate(300%) contrast(0.8);
+}
+
 .project-component-row:hover {
   transform: scale(1.05);
-  cursor: pointer;
   box-shadow: 0 0 50px 2px #abb3b8;
   filter: grayscale(0.75);
   color: #980808;
@@ -323,7 +341,7 @@ body {
 
 /* START CONTACT */
 
-.contact-content{
+.contact-content {
   position: relative;
   justify-content: center;
   transition: left 2s;
@@ -332,42 +350,83 @@ body {
   align-items: center;
 }
 
-.main-contact-flex-container{
+.main-contact-flex-container {
   min-width: 80%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  column-gap:9rem;
+  margin-top: 2rem;
+  column-gap: 2rem;
 }
 
-.contact-flex-container{
+.contact-flex-container {
   margin-bottom: 2rem;
-  background-color: #80705d;
   justify-content: space-between;
-  width:50rem;
+  background-color: #80705d;
+  width: 50rem;
 }
 
-.contact-flex-item{
+@media screen and (max-width: 1000px) {
+  .contact-flex-container {
+    justify-content: center;
+    background-color: #b39964;
+  }
+}
+
+textarea {
+  height: 15rem;
+  resize: none;
+}
+
+.contact-flex-item {
   background-color: #80705d;
   padding: 1rem 1rem 1rem 1rem;
-  width:20rem;
+  width: 23rem;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
 
+@media screen and (max-width: 1000px) {
+  .contact-flex-item {
+    justify-content: center;
+    max-width: 80%;
+    width: 100rem;
+  }
+}
+
+#contacts {
+  align-items: flex-start;
+}
+
+div > #caption {
+  font-size: 1.2rem;
+  color: #b39964;
+  background-color: #584c39;
+  text-align: center;
+  border: #584c39 1rem solid;
+}
+
 .map {
-  border: 1rem solid;
+  border: 0.5rem solid;
   border-color: #80705d;
   max-width: 80%;
+}
+
+.map,
+.contact-flex-container {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
 
-input{
-  height: 1.5rem;
-  width:100%;
+iframe {
+  background-color: #80705d;
+}
+
+textarea,
+input {
+  width: 100%;
   font-size: 1rem;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -376,27 +435,47 @@ input{
   border: none;
 }
 
-.contact-flex-item>p{
+@media screen and (max-width: 1000px) {
+  textarea,
+  input {
+    width: 23rem;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  textarea,
+  input {
+    width: 18rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  textarea,
+  input {
+    width: 15rem;
+  }
+}
+
+input {
+  height: 1.5rem;
+}
+
+.contact-flex-item > p {
   margin-top: 0.5rem;
   margin-bottom: 0.25rem;
 }
 
-.contact-flex-item>div{
-  display:flex;
-  flex-direction: row;
-}
-
-.contact-flex-item>div>img:hover{
-  transform: scale(1.1);
-  transition: all 0.5s;
-  cursor: pointer;
-  margin-right: 1rem;
+h4 {
+  color: black;
+  margin-top: 1.5rem;
+  font-style: italic;
 }
 
 /* END CONTACT */
 
-/* SEE MORE BUTTON */
+/* BUTTONS */
 
+.btn-send,
 .btn-see-more {
   margin-top: 1rem;
   font-size: 1.25rem;
@@ -405,11 +484,24 @@ input{
   color: white;
   border: none;
   border-radius: 0.5rem;
+  transition: all 0.5s;
 }
 
+.btn-send:hover,
 .btn-see-more:hover {
   cursor: pointer;
   transform: scale(1.1);
   background-color: #980808;
-  transition: transform 0.5s;
+}
+
+.btn-send {
+  position: relative;
+  left: 16rem;
+  width: 5rem;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-send {
+    left: 10rem;
+  }
 }

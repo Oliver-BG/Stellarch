@@ -6,9 +6,9 @@
     <div class = "contact-content">
         <div class = "main-contact-flex-container">
 
-            <iframe class="map" width="800rem" height="400rem" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&t=m&ll=14.5969127,121.1136054&spn=0.003381,0.017231&z=16&output=embed"></iframe>
+            <iframe class="map" width="800rem" height="520rem" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/?ie=UTF8&t=m&ll=14.5969127,121.1136054&spn=0.003381,0.017231&z=16&output=embed"></iframe>
         
-            <div class = "contact-flex-container">
+            <div class = "contact-flex-container" id = "contacts">
                 <div class = "contact-flex-item">
 
                     <input placeholder = "Enter Name">
@@ -20,30 +20,76 @@
                     <input placeholder = "Enter Subject">
                     </input>
 
-                    <textarea placeholder = "Enter E-mail">
-                    </textarea>
-
+                    <textarea 
+                        placeholder = "Enter Message"
+                        maxlength = 600
+                    > </textarea>
+                    
+                    <button class = "btn-send"> SEND </button>
 
                 </div>
                 
+
                 <div class = "contact-flex-item">
+
+                    <p id = "caption"> Contact Us and start your dream projects now! </p>
+
+                    <h4>Address: </h4>
+
                     <p>
-                        Contact Number: 0917-717-8515
-                        <br>
-                        Email:
+                        &nbsp&nbsp Village East Executive Homes, Cainta, Rizal
                     </p>
 
-                    <div>
+                    <br>
+                    
+                    <h4>Contact Number: </h4>
 
-                        <img src = '{% static "images\home\socmed\facebook-icon.png" %}' style = "width: 3rem;">
+                    <p>
+                        &nbsp&nbsp 0917-717-8515
+                    </p>
 
-                        <img src = '{% static "images\home\socmed\instagram-icon.png" %}' style = "width: 3rem;">
-                        
-                    </div>
+                    <br>
+
+                    <h4>E-mail: </h4>
+
+                    <p>
+                        &nbsp&nbsp stellarchs.design@gmail.com
+                    </p>
+
                 </div>
             </div>
         
         </div>
+
     </div>
+
+    <div class = "socmed-container">
+                        
+        <!-- FACEBOOK LINK -->
+        <a 
+            href="https://www.facebook.com/profile.php?id=100087881661994"
+            target="_blank" 
+            rel="noopener noreferrer"
+        >
+            <img 
+                src = '{% static "images\home\socmed\facebook-icon.png" %}' 
+                style = "width: 3rem;" 
+            >
+        </a>
+
+        <!-- INSTAGRAM LINK -->
+        <a
+            href="https://www.instagram.com/stellarchs/"
+            target="_blank" 
+            rel="noopener noreferrer"
+        >
+            <img 
+                src = '{% static "images\home\socmed\instagram-icon.png" %}' 
+                style = "width: 3rem;"
+            >
+        </a>
+
+    </div>
+
 </div>
 
