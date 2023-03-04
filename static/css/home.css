@@ -381,7 +381,8 @@ textarea {
 
 .contact-flex-item {
   background-color: #80705d;
-  padding: 1rem 1rem 1rem 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   width: 23rem;
   display: flex;
   align-items: flex-start;
@@ -390,10 +391,20 @@ textarea {
 
 @media screen and (max-width: 1000px) {
   .contact-flex-item {
+    padding-left: 2rem;
+    padding-right: 2rem;
     justify-content: center;
     max-width: 80%;
     width: 100rem;
   }
+}
+
+#contacts-input {
+  padding-left: 2rem;
+}
+
+#contacts-enum {
+  padding-right: 2rem;
 }
 
 #contacts {
@@ -496,7 +507,7 @@ h4 {
 
 .btn-send {
   position: relative;
-  left: 16rem;
+  left: 15rem;
   width: 5rem;
 }
 
@@ -504,4 +515,13 @@ h4 {
   .btn-send {
     left: 10rem;
   }
+}
+
+video {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  max-width: 70%;
+  width: 100%;
+  height: 45vw;
+  background-color: #000000;
 }
