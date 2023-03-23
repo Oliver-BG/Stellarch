@@ -11,8 +11,9 @@ html, body {
     scroll-behavior:smooth;
 }
 
-/* HEADER ELEMENT */
-header{
+/* NAVBAR ELEMENT */
+
+nav{
     z-index: 99;
 }
 a{
@@ -24,7 +25,7 @@ span>a{
     color: white;
 }
 
-header{
+nav{
     position: fixed;
     width: 100%;
 }
@@ -290,7 +291,7 @@ span{
 
 /* END MENU */
 
-/* END HEADER */
+/* END NAVBAR */
 
 /* TOP */
 

@@ -449,21 +449,7 @@ input {
 @media screen and (max-width: 1000px) {
   textarea,
   input {
-    width: 23rem;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  textarea,
-  input {
-    width: 18rem;
-  }
-}
-
-@media screen and (max-width: 500px) {
-  textarea,
-  input {
-    width: 15rem;
+    max-width: 100%;
   }
 }
 
@@ -508,7 +494,7 @@ h4 {
 .btn-send {
   position: relative;
   left: 15rem;
-  width: 5rem;
+  width: 7rem;
 }
 
 @media screen and (max-width: 600px) {
